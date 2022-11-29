@@ -11,5 +11,13 @@ export type ButtonProps = {
 };
 
 export const Button: FC<ButtonProps> = ({ type, children }) => (
-  <button className={type === ButtonType.primary ? 'bg-blue-500 text-white' : 'bg-blue-200 text-black'}>{children}</button>
+  <button
+    className={
+      type === ButtonType.primary
+        ? 'bg-purple-600 text-white p-2 rounded-xl hover:bg-purple-800'
+        : 'bg-white border-2 p-2 rounded-xl border-purple-600 hover:border-purple-800'
+    }
+  >
+    {children}
+  </button>
 );

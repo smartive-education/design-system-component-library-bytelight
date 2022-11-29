@@ -10,8 +10,9 @@ export type ButtonProps = {
 
 export const getVariantStyles = (variant: ButtonProps['variant'], size: ButtonProps['size']) => {
   const gradiants = {
-    default: 'bg-gradient-to-l from-indigo-500 vi§a-purple-500 to-pink-500',
-    hover: 'hover:bg-gradient-to-l hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500',
+    default: 'bg-gradient-to-l from-purple-500 to-pink-500',
+    hover: 'hover:bg-gradient-to-l hover:from-indigo-500 hover:via-purple-600 hover:to-pink-500',
+    active: 'active:bg-gradient-to-l active:from-indigo-500 active:via-purple-700 active:to-pink-500',
   };
 
   switch (variant) {
@@ -20,7 +21,7 @@ export const getVariantStyles = (variant: ButtonProps['variant'], size: ButtonPr
     case 'secondary':
       return 'text-white hover:bg-slate-700 hover:border-2 hover:border-slate-100 disabled:bg-gray-300 bg-slate-600 active:border-slate-200';
     case 'tertiary':
-      return `text-white hover:bg-slate-700 hover:border-2 hover:border-slate-100 disabled:bg-gray-300 bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500 active:border-slate-200 ${gradiants.hover}`;
+      return `text-white hover:bg-slate-700 hover:border-2 hover:border-slate-100 disabled:bg-gray-300 bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500 active:border-slate-200 ${gradiants.hover} ${gradiants.active}`;
     default:
       return '';
   }

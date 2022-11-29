@@ -4,9 +4,7 @@ module.exports = {
   content: ['./src/**/*.{ts,tsx}'],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Poppins'],
-      },
+      fontFamily: {},
       fontSize: {
         '5xl': ['48px'],
         '4xl': ['40px'],

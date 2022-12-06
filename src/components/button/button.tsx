@@ -48,7 +48,7 @@ export const Button: FC<ButtonProps> = ({
   <button
     disabled={disabled}
     className={joinClassNames([
-      'rounded-lg font-medium transition-colors shrink-0',
+      'rounded-lg font-medium transition-colors shrink-0 ',
       size === 'regular' ? 'py-3' : 'py-1.5',
       getVariantStyles(variant, isActive),
     ])}

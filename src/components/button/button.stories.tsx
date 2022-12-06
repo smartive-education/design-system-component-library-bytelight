@@ -14,7 +14,13 @@ export default {
 } as ComponentMeta<typeof ButtonComponent>;
 
 const Template: ComponentStory<typeof ButtonComponent> = (args) => (
-  <ButtonComponent {...args}>Hallo Matthias</ButtonComponent>
+  <div className="inline-flex flex-col">
+    <ButtonComponent {...args}>
+      <div className="flex items-center gap-x-3">
+        Button Label <MumbleIcon size="16px" />
+      </div>
+    </ButtonComponent>
+  </div>
 );
 
 export const Button = Template.bind({});

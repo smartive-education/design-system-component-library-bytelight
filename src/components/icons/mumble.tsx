@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { IconProps, ICON_DEFAULT_SIZE } from './icons';
+import { IconProps, ICON_DEFAULT_SIZE } from './icon-props';
 
 export const MumbleIcon: FC<IconProps> = ({ size }) => (
   <svg

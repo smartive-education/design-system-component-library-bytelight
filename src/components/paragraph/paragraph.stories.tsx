@@ -14,7 +14,7 @@ export default {
 } as ComponentMeta<typeof ParagraphComponent>;
 
 const Template: ComponentStory<typeof ParagraphComponent> = ({ fontSize }) => (
-  <div className="w-[600px]">
+  <div>
     <ParagraphComponent fontSize={fontSize}>
       Paragraph – Quia aut et aut. Sunt et eligendi similique enim qui quo minus. Aut aut error velit voluptatum optio sed
       quis cumque error magni.

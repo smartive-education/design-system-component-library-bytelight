@@ -16,7 +16,7 @@
     }
   },
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf ./dist && tsc",
     "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 6006"
   },

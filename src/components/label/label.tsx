@@ -1,11 +1,11 @@
 import React, { FC, ReactNode } from 'react';
 import { joinClassNames } from '../../helpers';
 
-export type LabelProps = {
+type LabelProps = {
   children?: ReactNode;
   variant: 'XL' | 'L' | 'M' | 'S' | 'Placeholder';
 };
-export const getVariantStyles = (variant: LabelProps['variant']) => {
+const getVariantStyles = (variant: LabelProps['variant']) => {
   switch (variant) {
     case 'XL':
       return 'text-2xl';

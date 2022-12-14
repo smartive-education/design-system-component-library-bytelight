@@ -16,14 +16,17 @@ export default {
       options: ['XL', 'L', 'M', 'S', 'Placeholder'],
       control: { type: 'select' },
     },
+    onChange: { action: 'typed' },
   },
 } as ComponentMeta<typeof InputComponent>;
 
-const Template: ComponentStory<typeof InputComponent> = ({ placeholder, label, labelVariant }) => (
-  <>
-    <InputComponent placeholder={placeholder} label={label} labelVariant={labelVariant} />
-  </>
-);
+const Template: ComponentStory<typeof InputComponent> = (args) => {
+  return (
+    <>
+      <InputComponent {...args} />
+    </>
+  );
+};
 export const Input = Template.bind({});
 
 Input.args = {

@@ -41,7 +41,7 @@ const colors = [
   'slate50',
 ] as const;
 export default {
-  title: 'Components/Icons',
+  title: 'Components',
   component: Icons,
   argTypes: {
     color: {

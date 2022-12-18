@@ -7,18 +7,31 @@ export default {
   title: 'Components/Button',
   component: ButtonComponent,
   argTypes: {
+    children: { control: { type: 'text' } },
+    as: {
+      options: ['button', 'a'],
+      control: { type: 'select' },
+    },
     variant: {
       options: ['primary', 'secondary', 'tertiary'],
       control: { type: 'select' },
     },
+    size: {
+      options: ['M', 'L'],
+      control: { type: 'select' },
+    },
+    href: {
+      control: { type: 'text' },
+    },
   },
 } as ComponentMeta<typeof ButtonComponent>;
 
-const Template: ComponentStory<typeof ButtonComponent> = (args) => (
-  <div className="inline-flex flex-col">
+const Template: ComponentStory<typeof ButtonComponent> = ({ children, ...args }) => (
+  <div className="inline-flex">
     <ButtonComponent {...args}>
       <div className="flex items-center gap-x-3">
-        Button Label <MumbleIcon size="16px" />
+        {children}
+        <MumbleIcon size="16px" />
       </div>
     </ButtonComponent>
   </div>
@@ -28,4 +41,7 @@ export const Button = Template.bind({});
 
 Button.args = {
   variant: 'primary',
+  size: 'M',
+  children: 'Button Label',
+  href: '#',
 };

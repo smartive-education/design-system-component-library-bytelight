@@ -5,7 +5,9 @@ export type ButtonProps = {
   onClick: () => void;
   children: ReactNode;
   variant?: 'primary' | 'secondary' | 'tertiary';
-  size?: 'medium' | 'large';
+  size?: 'M' | 'L';
+  as: 'button' | '';
+  href?: string;
 };
 
 export const getVariantStyles = (variant: ButtonProps['variant'], size: ButtonProps['size']) => {
@@ -21,15 +23,31 @@ export const getVariantStyles = (variant: ButtonProps['variant'], size: ButtonPr
   }
 };
 
-export const Button: FC<ButtonProps> = ({ onClick, children, variant = 'primary', size = 'medium' }) => (
-  <button
-    className={joinClassNames([
-      'rounded-lg font-semibold transition-colors hover:outline active:outline active:outline-s hover:outline-xs text-white',
-      size === 'medium' ? 'p-3' : 'px-6 py-4',
-      getVariantStyles(variant, size),
-    ])}
-    onClick={onClick}
-  >
-    {children}
-  </button>
+export const Button: FC<ButtonProps> = ({ onClick, children, variant = 'primary', size = 'M', as, href }) => (
+  <>
+    {as === 'button' ? (
+      <button
+        className={joinClassNames([
+          'rounded-lg font-semibold transition-colors hover:outline active:outline active:outline-s hover:outline-xs text-white',
+          size === 'M' ? 'p-3' : 'px-6 py-4',
+          getVariantStyles(variant, size),
+        ])}
+        onClick={onClick}
+      >
+        {children}
+      </button>
+    ) : (
+      <a
+        className={joinClassNames([
+          'rounded-lg font-semibold transition-colors hover:outline active:outline active:outline-s hover:outline-xs text-white',
+          size === 'M' ? 'p-3' : 'px-6 py-4',
+          getVariantStyles(variant, size),
+        ])}
+        onClick={onClick}
+        href={href}
+      >
+        {children}
+      </a>
+    )}
+  </>
 );

@@ -1,10 +1,10 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
-import { Input as InputComponent } from './input';
+import { InputWithIcon as InputComponentWithIcon } from './inputWithIcon';
 
 export default {
   title: 'Components',
-  component: InputComponent,
+  component: InputComponentWithIcon,
   argTypes: {
     label: {
       control: { type: 'text' },
@@ -16,18 +16,17 @@ export default {
       options: ['XL', 'L', 'M', 'S', 'Placeholder'],
       control: { type: 'select' },
     },
-    onChange: { action: 'typed' },
   },
-} as ComponentMeta<typeof InputComponent>;
+} as ComponentMeta<typeof InputComponentWithIcon>;
 
-const Template: ComponentStory<typeof InputComponent> = ({ placeholder, label, labelVariant, onInput }) => (
+const Template: ComponentStory<typeof InputComponentWithIcon> = ({ placeholder, label, labelVariant, onInput }) => (
   <>
-    <InputComponent placeholder={placeholder} label={label} labelVariant={labelVariant} onInput={onInput} />
+    <InputComponentWithIcon placeholder={placeholder} label={label} labelVariant={labelVariant} onInput={onInput} />
   </>
 );
-export const Input = Template.bind({});
+export const InputWithIcon = Template.bind({});
 
-Input.args = {
+InputWithIcon.args = {
   label: 'Default Label',
   placeholder: 'Placeholder',
   labelVariant: 'M',

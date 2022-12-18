@@ -28,7 +28,7 @@ export const Button: FC<ButtonProps> = ({ onClick, children, variant = 'primary'
     {as === 'button' ? (
       <button
         className={joinClassNames([
-          'rounded-lg font-semibold transition-colors hover:outline active:outline active:outline-s hover:outline-xs text-white',
+          'w-full rounded-lg font-semibold transition-colors hover:outline active:outline active:outline-s hover:outline-xs text-white',
           size === 'M' ? 'p-3' : 'px-6 py-4',
           getVariantStyles(variant, size),
         ])}
@@ -39,7 +39,7 @@ export const Button: FC<ButtonProps> = ({ onClick, children, variant = 'primary'
     ) : (
       <a
         className={joinClassNames([
-          'rounded-lg font-semibold transition-colors hover:outline active:outline active:outline-s hover:outline-xs text-white',
+          'w-full rounded-lg font-semibold transition-colors hover:outline active:outline active:outline-s hover:outline-xs text-white',
           size === 'M' ? 'p-3' : 'px-6 py-4',
           getVariantStyles(variant, size),
         ])}

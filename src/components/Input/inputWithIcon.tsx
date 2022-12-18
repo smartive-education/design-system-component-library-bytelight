@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { MumbleIcon } from '../icons/mumble';
 import { Label } from '../label/label';
 
 type InputProps = {
@@ -8,7 +9,7 @@ type InputProps = {
   onInput: (input: string) => void;
 };
 
-export const Input: FC<InputProps> = ({ placeholder, label, labelVariant = 'L', onInput }) => (
+export const InputWithIcon: FC<InputProps> = ({ placeholder, label, labelVariant = 'L', onInput }) => (
   <>
     <Label variant={labelVariant}>{label}</Label>
     <div className=" flex items-center justify-end border border-slate-200 rounded-lg hover:border-violet-600">
@@ -18,6 +19,9 @@ export const Input: FC<InputProps> = ({ placeholder, label, labelVariant = 'L', 
         placeholder={placeholder}
         onInput={(e) => onInput((e.target as HTMLInputElement).value)}
       />
+      <div className="absolute pr-4 text-slate-600">
+        <MumbleIcon size="16" />
+      </div>
     </div>
   </>
 );

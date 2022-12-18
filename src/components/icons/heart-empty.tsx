@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { IconProps, ICON_DEFAULT_SIZE } from './icon-props';
 
-export const HeartFilledIcon: FC<IconProps> = ({ size }) => (
+export const HeartEmptyIcon: FC<IconProps> = ({ size }) => (
   <svg
     width={size || ICON_DEFAULT_SIZE}
     height={size || ICON_DEFAULT_SIZE}

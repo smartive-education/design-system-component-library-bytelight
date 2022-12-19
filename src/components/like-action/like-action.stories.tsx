@@ -23,3 +23,7 @@ const Template: ComponentStory<typeof LikeActionComponent> = ({ ...args }) => {
 };
 
 export const LikeAction = Template.bind({});
+
+LikeAction.args = {
+  count: 0,
+};

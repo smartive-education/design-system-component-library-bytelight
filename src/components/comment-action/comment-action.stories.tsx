@@ -23,3 +23,7 @@ const Template: ComponentStory<typeof CommentActionComponent> = ({ ...args }) =>
 };
 
 export const CommentAction = Template.bind({});
+
+CommentAction.args = {
+  count: 0,
+};

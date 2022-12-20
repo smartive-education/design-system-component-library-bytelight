@@ -7,3 +7,4 @@ export * from './label';
 export * from './paragraph';
 export * from './like-action';
 export * from './comment-action';
+export * from './settings-button';

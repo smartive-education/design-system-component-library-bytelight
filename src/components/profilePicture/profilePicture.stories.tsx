@@ -15,9 +15,11 @@ export default {
 } as ComponentMeta<typeof ProfilePictureComponent>;
 
 const Template: ComponentStory<typeof ProfilePictureComponent> = ({ src, alt, size }) => (
-  <ProfilePictureComponent src="https://cdn.iconscout.com/icon/free/png-256/avatar-370-456322.png" alt={alt} size={size} />
+  <ProfilePictureComponent src={src} alt={alt} size={size} />
 );
 
 export const ProfilePicture = Template.bind({});
 
-ProfilePicture.args = {};
+ProfilePicture.args = {
+  src: 'https://cdn.iconscout.com/icon/free/png-256/avatar-370-456322.png',
+};

@@ -4,7 +4,7 @@ import { Label } from '../label/label';
 type InputProps = {
   placeholder: string;
   label: string;
-  labelVariant: 'XL' | 'L' | 'M' | 'S' | 'Placeholder';
+  labelVariant: 'XL' | 'L' | 'M' | 'S';
   onInput: (input: string) => void;
 };
 

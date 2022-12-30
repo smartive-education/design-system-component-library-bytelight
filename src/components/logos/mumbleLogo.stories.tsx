@@ -9,7 +9,7 @@ import { MumbleTertiaryRow } from './mumbleTertiaryRow';
 import { NavbarLogo } from './navbarLogo';
 
 export default {
-  title: 'Branding/Logos',
+  title: 'Components/Logos',
   component: Primary,
 } as Meta;
 

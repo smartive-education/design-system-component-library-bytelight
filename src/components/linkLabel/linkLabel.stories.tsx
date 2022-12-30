@@ -3,7 +3,7 @@ import React from 'react';
 import { LinkLabel as LinkLabelComponent } from './linkLabel';
 
 export default {
-  title: 'Components',
+  title: 'Components/Label',
   component: LinkLabelComponent,
   argTypes: {
     href: {

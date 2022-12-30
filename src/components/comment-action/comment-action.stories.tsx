@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { CommentAction as CommentActionComponent } from './comment-action';
 
 export default {
-  title: 'Components',
+  title: 'Components/Actions',
   component: CommentActionComponent,
   argTypes: {
     count: {

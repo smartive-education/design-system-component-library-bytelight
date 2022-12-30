@@ -3,7 +3,7 @@ import React from 'react';
 import { Input as InputComponent } from './input';
 
 export default {
-  title: 'Components',
+  title: 'Components/Input',
   component: InputComponent,
   argTypes: {
     label: {

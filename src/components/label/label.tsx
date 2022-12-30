@@ -3,7 +3,7 @@ import { joinClassNames } from '../../helpers';
 
 type LabelProps = {
   children?: ReactNode;
-  variant: 'XL' | 'L' | 'M' | 'S';
+  variant: 'XL' | 'L' | 'M' | 'Placeholder' | 'S';
 };
 const getVariantStyles = (variant: LabelProps['variant']) => {
   switch (variant) {
@@ -13,6 +13,8 @@ const getVariantStyles = (variant: LabelProps['variant']) => {
       return 'text-xl';
     case 'M':
       return 'text-base';
+    case 'Placeholder':
+      return 'text-base text-slate-300';
     case 'S':
       return 'text-xs';
   }

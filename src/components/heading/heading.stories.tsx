@@ -6,7 +6,7 @@ import { Heading3 } from './heading3';
 import { Heading4 } from './heading4';
 
 export default {
-  title: 'Typography/Heading',
+  title: 'Components',
   component: Heading1,
 } as Meta<{}>;
 

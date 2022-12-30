@@ -2,7 +2,7 @@ import React, { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ProfilePicture as ProfilePictureComponent } from './profilePicture';
 
 export default {
-  title: 'components',
+  title: 'Components',
   component: ProfilePictureComponent,
   argTypes: {
     src: { control: { type: 'text' } },

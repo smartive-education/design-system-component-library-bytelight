@@ -3,11 +3,11 @@ import React from 'react';
 import { Label as LabelComponent } from './label';
 
 export default {
-  title: 'Components',
+  title: 'Components/Label',
   component: LabelComponent,
   argTypes: {
     variant: {
-      options: ['XL', 'L', 'M', 'S'],
+      options: ['XL', 'L', 'M', 'Placeholder', 'S'],
       control: { type: 'select' },
     },
     children: {

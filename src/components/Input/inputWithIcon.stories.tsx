@@ -3,7 +3,7 @@ import React from 'react';
 import { InputWithIcon as InputComponentWithIcon } from './inputWithIcon';
 
 export default {
-  title: 'Components',
+  title: 'Components/Input',
   component: InputComponentWithIcon,
   argTypes: {
     label: {

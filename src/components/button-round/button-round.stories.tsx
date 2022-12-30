@@ -1,10 +1,10 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { ButtonRound as ButtonRoundComponent } from './button-round';
 import React from 'react';
 import { MumbleIcon } from '../icons/mumble';
+import { ButtonRound as ButtonRoundComponent } from './button-round';
 
 export default {
-  title: 'Components/ButtonRound',
+  title: 'Components/Button',
   component: ButtonRoundComponent,
   argTypes: {
     onClick: { action: 'clicked' },

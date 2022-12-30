@@ -3,7 +3,7 @@ import React from 'react';
 import { Colors, Colors as defaultColors } from './colors';
 
 export default {
-  title: 'Branding/Colors',
+  title: 'Colors',
   component: defaultColors,
 } as Meta;
 

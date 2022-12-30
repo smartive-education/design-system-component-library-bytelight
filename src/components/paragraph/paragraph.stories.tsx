@@ -3,7 +3,7 @@ import React from 'react';
 import { Paragraph as ParagraphComponent } from './paragraph';
 
 export default {
-  title: 'Typography/Paragraph',
+  title: 'Components',
   component: ParagraphComponent,
   argTypes: {
     fontSize: {

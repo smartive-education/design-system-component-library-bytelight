@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Switch as SwitchComponent } from './switch';
 
 export default {
-  title: 'Components/Switch',
+  title: 'Components/Button',
   component: SwitchComponent,
   argTypes: {
     isActive: {},

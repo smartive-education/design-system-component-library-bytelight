@@ -6,7 +6,7 @@ import { ProfilePicture } from '../profilePicture/profilePicture';
 import { Textarea } from '../textarea/textarea';
 
 export default {
-  title: 'Cards/WriteCard',
+  title: 'Cards/WriteMumble',
   component: Heading1,
 } as Meta<{}>;
 
@@ -69,4 +69,4 @@ const Template: Story<{}> = () => {
   );
 };
 
-export const WriteCard = Template.bind({});
+export const WriteMumble = Template.bind({});

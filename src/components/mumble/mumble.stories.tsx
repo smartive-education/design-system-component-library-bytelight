@@ -7,7 +7,7 @@ import { ProfilePicture } from '../profilePicture/profilePicture';
 import { ShareButton } from '../shareButton/shareButton';
 
 export default {
-  title: 'Cards/MumbleCard',
+  title: 'Cards/Mumble',
   component: Heading1,
 } as Meta<{}>;
 
@@ -66,4 +66,4 @@ const Template: Story<{}> = () => {
   );
 };
 
-export const MumbleCard = Template.bind({});
+export const Mumble = Template.bind({});

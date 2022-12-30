@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-export const MumbleSecondary: FC = () => (
+export const MumbleGradient: FC = () => (
   <svg width="247" height="128" viewBox="0 0 247 128" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g clip-path="url(#clip0_447_514)">
       <path

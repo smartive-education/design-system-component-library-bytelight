@@ -14,8 +14,18 @@ const Template: Story<{}> = () => {
   const [textareaValue, setTextareaValue] = useState('');
   return (
     <div className="flex flex-col gap-y-l bg-slate-100 w-full h-full p-xl">
-      <div className=" bg-white w-[680px] h-[330px] p-s rounded-2xl">
-        <Heading4>Hey, was läuft da?</Heading4>
+      <div className=" bg-white w-[680px] p-s rounded-2xl">
+        <div className="relative right-xl flex-row flex">
+          <ProfilePicture
+            size="M"
+            src="https://media-exp1.licdn.com/dms/image/C4E03AQFgInTejVZXBw/profile-displayphoto-shrink_800_800/0/1663262186058?e=2147483647&v=beta&t=tk1WEpU3VCsL8IFbBWnCw5GgaXNjGl9TdiTyn-gAjOs"
+            alt="profile-Picture"
+          />
+          <div className="mt-s ml-m">
+            <Heading4>Hey, was läuft da?</Heading4>
+          </div>
+        </div>
+
         <div className="mt-s">
           <Textarea placeholder="Deine Meinung zählt!" onTextareaChange={(e) => setTextareaValue(e)} />
         </div>

@@ -4,7 +4,7 @@ import { MumbleViolet as Violet } from './mumbleViolet';
 import { MumbleVioletRow } from './mumbleVioletRow';
 
 export default {
-  title: 'Components/Logos',
+  title: 'Components/Logo',
   component: Violet,
 } as Meta;
 

@@ -3,7 +3,7 @@ import React from 'react';
 import { NavbarMumble as Navbar } from './navbarMumble';
 
 export default {
-  title: 'Components/Logos',
+  title: 'Components/Logo',
   component: Navbar,
 } as Meta;
 

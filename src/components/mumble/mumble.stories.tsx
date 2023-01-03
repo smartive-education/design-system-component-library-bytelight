@@ -23,7 +23,7 @@ const Template: Story<{}> = () => {
   }, [isCopied]);
 
   return (
-    <div className=" bg-slate-100 w-full h-full p-xl">
+    <div className=" bg-slate-100 w-screen h-screen p-xl">
       <div className=" bg-white w-[615px] h-[650px] p-xl rounded-2xl">
         <div className="flex mb-s">
           <ProfilePicture

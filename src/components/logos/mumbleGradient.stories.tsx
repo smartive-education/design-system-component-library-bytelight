@@ -4,7 +4,7 @@ import { MumbleGradient as Gradient } from './mumbleGradient';
 import { MumbleGradientRow } from './mumbleGradientRow';
 
 export default {
-  title: 'Components/Logos',
+  title: 'Components/Logo',
   component: Gradient,
 } as Meta;
 

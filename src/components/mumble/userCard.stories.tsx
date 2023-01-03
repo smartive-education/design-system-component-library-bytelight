@@ -11,7 +11,7 @@ export default {
 } as Meta<{}>;
 
 const Template: Story<{}> = () => (
-  <div className="bg-slate-100 w-screnn h-screen p-l">
+  <div className="bg-slate-100 w-screen h-screen p-l">
     <div className="flex gap-x-xs">
       <div className="flex flex-col items-center w-[215px] h-[260px] rounded-2xl bg-white py-s">
         <ProfilePicture

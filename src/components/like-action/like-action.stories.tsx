@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { LikeAction as LikeActionComponent } from './like-action';
 
 export default {
-  title: 'Components/Actions',
+  title: 'Components/Action',
   component: LikeActionComponent,
   argTypes: {
     count: {

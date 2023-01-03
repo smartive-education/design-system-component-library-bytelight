@@ -4,7 +4,7 @@ import { MumbleWhite as White } from './mumbleWhite';
 import { MumbleWhiteRow } from './mumbleWhiteRow';
 
 export default {
-  title: 'Components/Logos',
+  title: 'Components/Logo',
   component: White,
 } as Meta;
 

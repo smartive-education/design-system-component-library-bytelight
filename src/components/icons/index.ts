@@ -20,3 +20,4 @@ export * from './logout';
 export * from './settings';
 export * from './eye';
 export * from './profile';
+export * from './mumble';

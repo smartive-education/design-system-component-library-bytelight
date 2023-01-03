@@ -30,16 +30,16 @@ export const SettingsModal: FC<ModalProps> = ({ onInput, onClose, onSave }) => (
           label="Altes Passwort"
           labelVariant="M"
           onInput={onInput}
-          icon={<EyeIcon size="16" />}
-          IsPasswordInput
+          icon={<EyeIcon />}
+          isPasswordInput
         />
         <InputWithIcon
           placeholder=""
           label="Neues Passwort"
           labelVariant="M"
           onInput={onInput}
-          icon={<EyeIcon size="16" />}
-          IsPasswordInput
+          icon={<EyeIcon />}
+          isPasswordInput
         />
       </div>
       <div className="flex px-l gap-x-s pb-l">

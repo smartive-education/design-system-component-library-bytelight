@@ -4,7 +4,7 @@ import { useCopyToClipboard } from 'react-use';
 import { ShareButton as ShareButtonComponent } from './shareButton';
 
 export default {
-  title: 'Components/Actions',
+  title: 'Components/Action',
   component: ShareButtonComponent,
 } as ComponentMeta<typeof ShareButtonComponent>;
 

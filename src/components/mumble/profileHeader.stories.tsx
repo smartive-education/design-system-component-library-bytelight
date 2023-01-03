@@ -11,7 +11,7 @@ export default {
 
 const Template: Story<{}> = () => {
   return (
-    <div className="flex bg-slate-100 w-full h-full p-xl">
+    <div className="flex bg-slate-100 w-screen h-screen p-xl">
       <div className="w-[615px] h-[650px] rounded-2xl">
         <div className="flex relative mt-s">
           <img src="https://wallpaperaccess.com/full/2222765.jpg" className="rounded-xl w-full h-full" />

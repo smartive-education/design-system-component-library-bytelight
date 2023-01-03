@@ -19,9 +19,23 @@ export default {
   },
 } as ComponentMeta<typeof InputComponentWithIcon>;
 
-const Template: ComponentStory<typeof InputComponentWithIcon> = ({ placeholder, label, labelVariant, onInput }) => (
+const Template: ComponentStory<typeof InputComponentWithIcon> = ({
+  placeholder,
+  label,
+  labelVariant,
+  onInput,
+  icon,
+  IsPasswordInput = false,
+}) => (
   <>
-    <InputComponentWithIcon placeholder={placeholder} label={label} labelVariant={labelVariant} onInput={onInput} />
+    <InputComponentWithIcon
+      placeholder={placeholder}
+      label={label}
+      labelVariant={labelVariant}
+      onInput={onInput}
+      icon
+      IsPasswordInput
+    />
   </>
 );
 export const InputWithIcon = Template.bind({});

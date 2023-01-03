@@ -1,6 +1,7 @@
 import { Meta, Story } from '@storybook/react';
 import React, { useState } from 'react';
 import { Button, Heading1, Heading4, Label, SendIcon, UploadIcon } from '../index';
+import { UploadModal } from '../modal/uploadModal';
 import { MumbleDetails } from '../mumbleDetails/mumbleDetails';
 import { ProfilePicture } from '../profilePicture/profilePicture';
 import { Textarea } from '../textarea/textarea';
@@ -12,6 +13,7 @@ export default {
 
 const Template: Story<{}> = () => {
   const [textareaValue, setTextareaValue] = useState('');
+  const [showModal, setShowModal] = useState(false);
   return (
     <div className="flex flex-col gap-y-l bg-slate-100 w-full h-full p-xl">
       <div className=" bg-white w-[680px] p-s rounded-2xl">
@@ -30,7 +32,7 @@ const Template: Story<{}> = () => {
           <Textarea placeholder="Deine Meinung zählt!" onTextareaChange={(e) => setTextareaValue(e)} />
         </div>
         <div className="flex gap-x-s mt-s">
-          <Button as="button" variant="secondary" onClick={() => console.log('clicked')}>
+          <Button as="button" variant="secondary" onClick={() => setShowModal(true)}>
             <div className="flex items-center justify-center gap-x-xs">
               Bild hochladen
               <UploadIcon size="16" />
@@ -44,7 +46,6 @@ const Template: Story<{}> = () => {
           </Button>
         </div>
       </div>
-
       <div className="bg-white w-[680px] h-[330px] p-s rounded-2xl">
         <div className="flex">
           <ProfilePicture
@@ -61,7 +62,7 @@ const Template: Story<{}> = () => {
           <Textarea placeholder="Deine Meinung zählt!" onTextareaChange={(e) => setTextareaValue(e)} />
         </div>
         <div className="flex gap-x-s mt-s">
-          <Button as="button" variant="secondary" onClick={() => console.log('clicked')}>
+          <Button as="button" variant="secondary" onClick={() => setShowModal(true)}>
             <div className="flex items-center justify-center gap-x-xs">
               Bild hochladen
               <UploadIcon size="16" />
@@ -75,6 +76,17 @@ const Template: Story<{}> = () => {
           </Button>
         </div>
       </div>
+
+      {showModal && (
+        <div className="inline-flex w-full h-full items-center justify-center">
+          <UploadModal
+            onClose={() => setShowModal(false)}
+            onChange={() => console.log('hi')}
+            onSave={() => console.log('hi')}
+            onClick={() => console.log('hi')}
+          />
+        </div>
+      )}
     </div>
   );
 };

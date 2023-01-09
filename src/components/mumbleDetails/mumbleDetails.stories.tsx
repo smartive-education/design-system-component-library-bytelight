@@ -31,4 +31,4 @@ const Template: ComponentStory<typeof MumbleDetailsComponent> = ({ value, href, 
   </>
 );
 
-export const MubmleDetails = Template.bind({});
+export const MumbleDetails = Template.bind({});

@@ -1,5 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
+import { MumbleIcon } from '../index';
 import { InputWithIcon as InputComponentWithIcon } from './inputWithIcon';
 
 export default {
@@ -16,26 +17,16 @@ export default {
       options: ['XL', 'L', 'M', 'S', 'Placeholder'],
       control: { type: 'select' },
     },
+    isPasswordInput: {
+      options: [false, true],
+      control: { type: 'select' },
+    },
   },
 } as ComponentMeta<typeof InputComponentWithIcon>;
 
-const Template: ComponentStory<typeof InputComponentWithIcon> = ({
-  placeholder,
-  label,
-  labelVariant,
-  onInput,
-  icon,
-  IsPasswordInput = false,
-}) => (
+const Template: ComponentStory<typeof InputComponentWithIcon> = (args) => (
   <>
-    <InputComponentWithIcon
-      placeholder={placeholder}
-      label={label}
-      labelVariant={labelVariant}
-      onInput={onInput}
-      icon
-      IsPasswordInput
-    />
+    <InputComponentWithIcon {...args} />
   </>
 );
 export const InputWithIcon = Template.bind({});
@@ -44,4 +35,5 @@ InputWithIcon.args = {
   label: 'Default Label',
   placeholder: 'Placeholder',
   labelVariant: 'M',
+  isPasswordInput: false,
 };

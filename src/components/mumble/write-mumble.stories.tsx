@@ -1,9 +1,9 @@
 import { Meta, Story } from '@storybook/react';
 import React, { useState } from 'react';
 import { Button, Heading1, Heading4, Label, SendIcon, UploadIcon } from '../index';
-import { UploadModal } from '../modal/uploadModal';
-import { MumbleDetails } from '../mumbleDetails/mumbleDetails';
-import { ProfilePicture } from '../profilePicture/profilePicture';
+import { UploadModal } from '../modal/upload-modal';
+import { MumbleDetails } from '../mumble-details/mumble-details';
+import { ProfilePicture } from '../profile-picture/profile-picture';
 import { Textarea } from '../textarea/textarea';
 
 export default {

@@ -7,14 +7,16 @@
     "tag": "latest"
   },
   "files": [
-    "dist"
+    "dist",
+    "tailwind.config.js"
   ],
   "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js"
-    }
-  },
+	"exports": {
+		".": {
+			"import": "./dist/index.js"
+		},
+		"./byteLightTailwind": "./tailwind.config.js"
+	},
   "scripts": {
     "build": "rm -rf ./dist && tsc",
     "build-storybook": "build-storybook",

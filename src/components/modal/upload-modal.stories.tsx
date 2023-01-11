@@ -1,6 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
-import { UploadModal as MumbleModal } from './uploadModal';
+import { UploadModal as MumbleModal } from './upload-modal';
 
 export default {
   title: 'Components/Modal',

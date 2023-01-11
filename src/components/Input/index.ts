@@ -1,2 +1,2 @@
 export * from './input';
-export * from './inputWithIcon';
+export * from './input-with-icon';

@@ -1,6 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
-import { SettingsModal as MumbleModal } from './settingsModal';
+import { SettingsModal as MumbleModal } from './settings-modal';
 
 export default {
   title: 'Components/Modal',

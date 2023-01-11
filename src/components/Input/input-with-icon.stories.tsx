@@ -1,7 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
 import { MumbleIcon } from '../index';
-import { InputWithIcon as InputComponentWithIcon } from './inputWithIcon';
+import { InputWithIcon as InputComponentWithIcon } from './input-with-icon';
 
 export default {
   title: 'Components/Input',

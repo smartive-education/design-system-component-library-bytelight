@@ -1,6 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
-import { LinkLabel as LinkLabelComponent } from './linkLabel';
+import { LinkLabel as LinkLabelComponent } from './link-label';
 
 export default {
   title: 'Components/Label',

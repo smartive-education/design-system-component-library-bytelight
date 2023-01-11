@@ -1,7 +1,7 @@
 import { Meta, Story } from '@storybook/react';
 import React from 'react';
-import { MumbleViolet as Violet } from './mumbleViolet';
-import { MumbleVioletRow } from './mumbleVioletRow';
+import { MumbleViolet as Violet } from './mumble-violet';
+import { MumbleVioletRow } from './mumble-violet-row';
 
 export default {
   title: 'Components/Logo',

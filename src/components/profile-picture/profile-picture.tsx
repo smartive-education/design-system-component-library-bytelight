@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { joinClassNames } from '../../helpers';
+import { joinClassNames } from '../../helpers/index';
 
 type ProfilePictureProps = {
   src: string;

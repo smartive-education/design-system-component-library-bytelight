@@ -1,6 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
-import { MumbleDetails as MumbleDetailsComponent } from './mumbleDetails';
+import { MumbleDetails as MumbleDetailsComponent } from './mumble-details';
 
 export default {
   title: 'Components',

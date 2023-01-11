@@ -1,5 +1,5 @@
 import React, { ComponentMeta, ComponentStory } from '@storybook/react';
-import { ProfilePicture as ProfilePictureComponent } from './profilePicture';
+import { ProfilePicture as ProfilePictureComponent } from './profile-picture';
 
 export default {
   title: 'Components',

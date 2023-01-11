@@ -1,7 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React, { useEffect, useState } from 'react';
 import { useCopyToClipboard } from 'react-use';
-import { ShareButton as ShareButtonComponent } from './shareButton';
+import { ShareButton as ShareButtonComponent } from './share-button';
 
 export default {
   title: 'Components/Action',

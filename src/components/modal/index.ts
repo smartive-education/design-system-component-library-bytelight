@@ -1,2 +1,2 @@
-export * from './settingsModal';
-export * from './uploadModal';
+export * from './settings-modal';
+export * from './upload-modal';

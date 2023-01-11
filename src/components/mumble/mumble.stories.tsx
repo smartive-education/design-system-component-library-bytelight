@@ -2,9 +2,9 @@ import { Meta, Story } from '@storybook/react';
 import React, { useEffect, useState } from 'react';
 import { useCopyToClipboard } from 'react-use';
 import { CommentAction, Heading1, Label, LikeAction, Paragraph } from '../index';
-import { MumbleDetails } from '../mumbleDetails/mumbleDetails';
-import { ProfilePicture } from '../profilePicture/profilePicture';
-import { ShareButton } from '../shareButton/shareButton';
+import { MumbleDetails } from '../mumble-details/mumble-details';
+import { ProfilePicture } from '../profile-picture/profile-picture';
+import { ShareButton } from '../share-button/share-button';
 
 export default {
   title: 'Cards/Mumble',

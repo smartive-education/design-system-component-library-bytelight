@@ -1,7 +1,7 @@
 import { Meta, Story } from '@storybook/react';
 import React from 'react';
-import { MumbleGradient as Gradient } from './mumbleGradient';
-import { MumbleGradientRow } from './mumbleGradientRow';
+import { MumbleGradient as Gradient } from './mumble-gradient';
+import { MumbleGradientRow } from './mumble-gradient-row';
 
 export default {
   title: 'Components/Logo',

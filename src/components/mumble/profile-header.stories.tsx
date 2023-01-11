@@ -1,8 +1,8 @@
 import { Meta, Story } from '@storybook/react';
 import React from 'react';
 import { Heading1, Label, Paragraph } from '../index';
-import { MumbleDetails } from '../mumbleDetails/mumbleDetails';
-import { ProfilePicture } from '../profilePicture/profilePicture';
+import { MumbleDetails } from '../mumble-details/mumble-details';
+import { ProfilePicture } from '../profile-picture/profile-picture';
 
 export default {
   title: 'Cards/ProfileHeader',
